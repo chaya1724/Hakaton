@@ -1,0 +1,21 @@
+<div class="row logo">
+    <img src="../../assets/logo.png">
+</div>
+
+<div class="row">
+</div>    <label class="myLable">:הכנס את שם החנות</label>
+
+<div class="row">
+    <select class="mySearch" (change)="onChange($event.target.value)">
+        <option  value="" disabled selected>בחרו חנות</option>
+        <option  *ngFor="let store of this.helpServise.storeList">{{store}}</option>
+    </select>
+</div>
+
+<div class="row">
+    <label class="myLable">:הכנס את שם המוצר</label>
+    <div class="row">
+    <button class="Search" (click)="searchStoresByProduct($event)">חפש</button>
+    <input class="mySearch1" type="text" placeholder=" הקלד את הטקסט" aria-label="Search" (change)="searchStoresByProduct($event)">
+    </div>
+</div>

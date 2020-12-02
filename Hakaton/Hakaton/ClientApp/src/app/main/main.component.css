@@ -1,0 +1,91 @@
+.inputWithIcon {
+    position: relative;
+    border-radius: 34px;
+    position: relative;
+    border: none;
+    margin-top: 30px;
+    padding-left: 20px;
+    background: #FFFFFF;
+  }
+  button:focus {
+    outline:0;
+  }
+  .microphone{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width:45px;
+    height:45px;
+    }
+  .searchText{
+      position: absolute;
+      top :5px;
+      left: 54%;
+      width:60%;
+      height:40px;
+      }
+  .search{
+    @include background(inset 18px 18px 30px #D1D9E6,$colorWhite,34px);
+    position: relative;
+    padding: 20px;
+    border: none;
+    margin-top: 30px;
+    padding-left: 20px;
+    background: #FFFFFF;
+    height: 40%;
+    text-indent:230px;
+    font-weight: 600;
+    font-size: 20px;
+   }
+   .active-pink-2 input.form-control[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #f48fb1;
+    box-shadow: 0 1px 0 0 #f48fb1;
+  }
+  .active-pink input.form-control[type=text] {
+    border-bottom: 1px solid #f48fb1;
+    box-shadow: 0 1px 0 0 #f48fb1;
+  }
+  .active-purple-2 input.form-control[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #ce93d8;
+    box-shadow: 0 1px 0 0 #ce93d8;
+  }
+  .active-purple input.form-control[type=text] {
+    border-bottom: 1px solid #ce93d8;
+    box-shadow: 0 1px 0 0 #ce93d8;
+  }
+  .active-cyan-2 input.form-control[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
+  }
+  .active-cyan input.form-control[type=text] {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
+  }
+  .active-cyan .fa, .active-cyan-2 .fa {
+    color: #4dd0e1;
+  }
+  .active-purple .fa, .active-purple-2 .fa {
+    color: #ce93d8;
+  }
+  .active-pink .fa, .active-pink-2 .fa {
+    color: #f48fb1;
+  }
+  .mySelect
+  {
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      background-image: url('../../assets/bigod.png');
+      cursor: pointer;
+      text-align: right;
+      padding: 15px;
+  }
+  .mySearch{
+width: 450px;
+height: 50px;
+margin-left:350px ;
+  }
+  .logo{
+      margin-left: 200px;
+      padding-left: 180px;
+  }
