@@ -37,8 +37,7 @@ import { StoresComponent } from './stores/stores.component';
       { path: 'searchComponent', component: SearchComponent },
       { path: 'resultComponent', component: ResultComponent },
       { path: 'storesComponent', component: StoresComponent },
-
-
+      { path: 'mainComponent', component: MainComponent },   
     ])
   ],
   providers: [],

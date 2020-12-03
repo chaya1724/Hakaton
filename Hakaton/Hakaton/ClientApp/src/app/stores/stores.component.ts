@@ -9,7 +9,7 @@ import { HelpService } from '../help.service';
   styleUrls: ['./stores.component.css']
 })
 export class StoresComponent implements OnInit {
-
+url:string;
   constructor(private helpServise:HelpService, private router: Router) { }
 
   ngOnInit() {
@@ -17,5 +17,12 @@ export class StoresComponent implements OnInit {
   onChange(store:string) {
     
       }
-
+      back()
+      {
+        this.router.navigate(['/searchComponent']);
+      }
+      home()
+      {
+        this.router.navigate(['/mainComponent']);
+      }
 }

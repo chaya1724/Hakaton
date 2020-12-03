@@ -2,19 +2,22 @@
     <img src="../../assets/logo.png">
 </div>
 <div class="row logo1">
-    <img src="../../assets/yesh2.png">
+    <img src="../../assets/yesh.png">
 </div>
-<div class="row">
-</div>   
- <label class="myLable">החנות נמצאת בתפוסה</label>
-<div class="row">
-<input class="mySearch" type="text" placeholder=" % :של " aria-label="Search">
-</div>
-<div class="row">
-<input class="mySearch" type="text" placeholder="_ / _" aria-label="Search">
-</div>
-<label class="myLable">תודה שבחרתם  {{this.helpServise.storeName}}</label>
-<label class="myLable">נשמח לעמוד לשרותכם</label>
+<div class=" melel">
 
-
-
+    <label class="myLable"> החנות נמצאת בתפוסה של {{this.helpServise.percent}} אחוז</label>
+    <div class="row">
+        <!-- <input class="mySearch" type="text" placeholder= " % :של " aria-label="Search"> -->
+    </div>
+    <div class="row">
+        <label class="myLable"> ישנם {{this.helpServise.nowPeople}} איש מתוך {{this.helpServise.allowed}} המותרים&nbsp; &nbsp;&nbsp; &nbsp;</label>
+    </div>
+    <label class="myLable">תודה שבחרתם {{this.helpServise.storeName}}&nbsp; &nbsp;</label>
+    <div class="row">
+        <label class="myLable">&nbsp; &nbsp;נשמח לעמוד לשרותכם</label>
+    </div>
+    <div class="row">
+        <button class="back" (click)="back()"></button>
+        <button class="home" (click)="home()"></button>
+    </div>

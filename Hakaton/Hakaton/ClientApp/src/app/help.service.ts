@@ -6,5 +6,8 @@ import { Injectable } from '@angular/core';
 export class HelpService {
 storeList:string[];
 storeName:string;
+percent:number;
+allowed:number;
+nowPeople:number=3;
   constructor() { }
 }

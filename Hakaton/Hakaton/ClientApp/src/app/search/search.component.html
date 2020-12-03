@@ -7,15 +7,19 @@
 
 <div class="row">
     <select class="mySearch" (change)="onChange($event.target.value)">
-        <option  value="" disabled selected>בחרו חנות</option>
+        <option   value="" disabled selected dir="rtl"> בחרו חנות</option>
         <option  *ngFor="let store of this.helpServise.storeList">{{store}}</option>
     </select>
 </div>
 
 <div class="row">
-    <label class="myLable">:הכנס את שם המוצר</label>
+    <label class="myLable"> &nbsp; &nbsp; :הכנס את שם המוצר</label>
     <div class="row">
-    <button class="Search" (click)="searchStoresByProduct($event)">חפש</button>
-    <input class="mySearch1" type="text" placeholder=" הקלד את הטקסט" aria-label="Search" (change)="searchStoresByProduct($event)">
+    <button class="Search" (click)="searchStoresByProduct($event)"></button>
+    <input class="mySearch1" type="text" dir="rtl" placeholder=" הקלד את הטקסט" aria-label="Search" (change)="searchStoresByProduct($event)">
     </div>
+</div>
+<div class="row">
+<button class="back" (click)="back()"></button>
+<button class="home" (click)="home()"></button>
 </div>
